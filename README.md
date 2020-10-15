@@ -21,7 +21,3 @@
 
 <body bgcolor="grey">
 
-h1 {
-  color: white;
-  text-align: center;
-}
