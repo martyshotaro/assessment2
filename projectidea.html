@@ -31,11 +31,11 @@
 
 <p style="font-family:verdana"><b>The 3 event handlers:</b></p>
 
-<img src="mitinitialize.jpg" height="100">
+<img src="mitinitialize.jpg" width="200" height="150">
 
 <p style="font-family:verdana"><b>Screen1.Initialize</b> is a block that refers to when it sets to a <em>WebViewer1.HomeUrl</em> property to files that include <u>file:///mnt/sdcard/AppInventor/assets/javascriptWebViewProcessor.html</u>. This is when <b>“debugMode”</b> is correct whereas <u>file:///android_asset/javascriptWebViewProcessor.html</u> is implemented when <b>"debugMode"</b> is incorrect. Lastly, it sets to Clock1.TimerInterval property to the value of <b>“processingIntervalMillis”</b>, which is 50 milliseconds, and it also undermines the Clock1 component, so that the triggering events are stopped for the benefit of running the app during its start.</p>
 
-<img src="mitbtnprocess.jpg" height="100">
+<img src="mitbtnprocess.jpg" width="200" height="150">
 
 <p style="font-family:verdana">The <b>btnProcess.Click</b> block refers to the setting of the <em>WebViewer1.WebViewString</em> component to the value of the <em>StringToBeProceesedByJavascriptFile.Text</em>. Through this, the <em>WebViewer1.GoHome</em> procedure is called that result in the WebViewer to load the <u>javascriptWebViewProcessor.html</u> page, which starts the processing aspect of javascript. Once the javascript processing begins, the app needs to be monitored in terms of its progress, and the <em>Clock1.TimerEnabled</em> property must be labelled as “true”.
   
