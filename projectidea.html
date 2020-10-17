@@ -41,43 +41,13 @@
   
 <p style="font-family:verdana">img src</p>  
 
+<p style="font-family:verdana"><b>Clock1.Timer</b> refers to the firing of an intermission set by the <b>“processingIntervalMillis”</b> variable whilst being in the <b>Screen1.Initialize</b> event. This occurs when the <em>Clock1.TimerEnabled property</em> is labelled as “true”. Every time the <em>Clock1.Timer</em> event is triggered, the inventor app searches for first checks to look for the value if <em>WebViewer1.WebViewString</em> matches with the <em>StringToBeProcessedByJavascriptFile.Text</em>, which will result in the WebViewer component being in current progress by the use of javascript, which augments the <b>"currentProcessingDurationMillis"</b> by the <b>"processingIntervalMillis"</b>.</p> 
 
+<p style="font-family:verdana">Its next step includes checking to see if the new <b>"currentProcessingDurationMillis"</b> has a preeminent value, or equivalent to the <b>"maximumProcessingDurationMillis value"</b>. If it’s like that, the app’s value adjustment is evident in terms of the <em>WebViewer1.WebViewString property</em>.</p>
 
+<p style="font-family:verdana">This is done by the conjoining of the adds, the text “timeout” to the current value of <em>StringToBeProcessedByJavascriptFile.Text</em> to make it different from the value of the <em>StringToBeProcessedByJavascriptFile.Text</em>. Users must ensure that the next time the <em>Clock1.Timer</em> event is triggered; the first check will not succeed. As soon as the first check fails, the app will start again that will lead to the <em>StringToBeProcessedByJavascriptFile.Text</em> to an empty string. The setting of the <em>Clock1.TimerEnabled</em> to “false”, and then by displaying a message to the user in a Message Dialog section that includes the outcome of the processing of the javascript, and the time of how long the process was. The output of the processing is accessible to the app, located in the <em>WebViewer1.WebViewString</em> property that’s set inside the javascript processing file.</p> 
 
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+<p style="font-family:verdana">Lastly, the <b>"currentProcessingDurationMillis"</b> is reset to 0, so the next time the user clicks on the <em>btnProcess</em>, the app will calculate the processing duration accurately, as a final clean-up measure.</p>
 
 <h3 style="font-family:verdana">Skills Required - The skills are required for your project, including software that needs to be written, and special hardware (if any). How feasible will it be to find the skills, software and hardware required?</h3>
 
